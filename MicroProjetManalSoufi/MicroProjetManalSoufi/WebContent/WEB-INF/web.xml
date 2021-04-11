@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>MicroProjetManalSoufi</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+		<servlet-name>mainServlet</servlet-name>
+		<servlet-class>controller.SimpleServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>mainServlet</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+  <servlet>
+      <servlet-name>IntInconnu</servlet-name>
+      <servlet-class>controller.IntInconnu</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>IntInconnu</servlet-name>
+       <url-pattern>/IntInconnu</url-pattern>
+</servlet-mapping>
+
+<servlet>
+      <servlet-name>Inscrire</servlet-name>
+      <servlet-class>controller.Inscrire</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>Inscrire</servlet-name>
+       <url-pattern>/Inscrire</url-pattern>
+</servlet-mapping>
+<servlet>
+      <servlet-name>Identifier</servlet-name>
+      <servlet-class>controller.Identifier</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>Identifier</servlet-name>
+       <url-pattern>/Identifier</url-pattern>
+</servlet-mapping>
+<servlet>
+      <servlet-name>Panier</servlet-name>
+      <servlet-class>controller.Panier</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>Panier</servlet-name>
+       <url-pattern>/Panier</url-pattern>
+</servlet-mapping>
+<servlet>
+      <servlet-name>Catalogue</servlet-name>
+      <servlet-class>controller.Catalogue</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>Catalogue</servlet-name>
+       <url-pattern>/Catalogue</url-pattern>
+</servlet-mapping>
+<servlet>
+      <servlet-name>Description</servlet-name>
+      <servlet-class>controller.Description</servlet-class>
+</servlet>
+<servlet-mapping>
+       <servlet-name>Description</servlet-name>
+       <url-pattern>/Description</url-pattern>
+</servlet-mapping>
+</web-app>
